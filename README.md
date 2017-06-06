@@ -2,6 +2,8 @@ demo-python
 ===========
 A demo of Python's project with automated tests.
 
+[![Build Status](https://travis-ci.org/tatools/demo-python.svg?branch=master)](https://travis-ci.org/tatools/demo-python)
+
 How to install?
 ===============
 1. Create separate virtual environment with Python 3.5.x.
