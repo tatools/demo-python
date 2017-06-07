@@ -5,5 +5,6 @@ install:
     - pip install -r requirements-dev.txt
 script:
     - ./verify_project.sh
+    - python setup.py install
 notifications:
   email: false
