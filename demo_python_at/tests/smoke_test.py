@@ -4,4 +4,5 @@ from demo_python_at.commoms.printer import StdoutPrinter
 
 
 def test_foo():
-    SimpleApplication(StdoutPrinter(), HtmlMessage(StrMessage("Hello"))).print()
+    SimpleApplication(StdoutPrinter(),
+                      HtmlMessage(StrMessage("Hello"))).print()
