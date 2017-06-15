@@ -1,4 +1,4 @@
-from demo_python_at.commoms.message import FakeMessage, HtmlMessage
+from demo_python_at.commons.message import FakeMessage, HtmlMessage
 
 
 def test_html_message():

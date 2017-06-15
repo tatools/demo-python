@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from demo_python_at.commoms.message import Message
+from demo_python_at.commons.message import Message
 
 
 class Printer(ABC):

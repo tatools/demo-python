@@ -1,6 +1,6 @@
-from demo_python_at.commoms.application import SimpleApplication
-from demo_python_at.commoms.message import HtmlMessage, StrMessage
-from demo_python_at.commoms.printer import StdoutPrinter
+from demo_python_at.commons.application import SimpleApplication
+from demo_python_at.commons.message import HtmlMessage, StrMessage
+from demo_python_at.commons.printer import StdoutPrinter
 
 
 def test_foo():
