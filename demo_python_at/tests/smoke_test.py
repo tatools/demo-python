@@ -4,4 +4,5 @@ from demo_python_at.commons.printer import StdoutPrinter
 
 
 def test_foo():
+    """Prints to console a string in html format."""
     SimpleApplication(StdoutPrinter(), HtmlMessage(StrMessage("Hello"))).print()
