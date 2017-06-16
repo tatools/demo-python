@@ -9,6 +9,7 @@ class Printer(ABC):
 
     @abstractmethod
     def print(self, message: Message):
+        """Abstract method for printing."""
         pass
 
 
@@ -17,4 +18,9 @@ class StdoutPrinter(Printer):
     """Class that prints a message to console."""
 
     def print(self, message: Message):
+        """
+        Print given message in stdout.
+
+        :param message: Message class object
+        """
         print(message.data())

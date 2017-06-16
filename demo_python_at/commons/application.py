@@ -10,6 +10,7 @@ class Application(ABC):
 
     @abstractmethod
     def print(self):
+        """Abstract method for printing."""
         pass
 
 
@@ -23,8 +24,15 @@ class SimpleApplication(Application):
     """
 
     def __init__(self, printer: Printer, message: Message):
+        """
+        Initialize SimpleApplication object.
+
+        :param printer: Printer class object
+        :param message: Message class object
+        """
         self._printer = printer
         self._message = message
 
     def print(self):
+        """Print message from Message class with specified Printer."""
         self._printer.print(self._message)
