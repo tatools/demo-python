@@ -5,7 +5,6 @@ from demo_python_at.commons.printer import Printer
 
 
 class Application(ABC):
-
     """Base class for all applications."""
 
     @abstractmethod
@@ -15,7 +14,6 @@ class Application(ABC):
 
 
 class SimpleApplication(Application):
-
     """
     Class that simply prints out text.
 
