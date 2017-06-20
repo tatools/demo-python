@@ -4,7 +4,6 @@ from demo_python_at.commons.message import Message
 
 
 class Printer(ABC):
-
     """Base class for all printers."""
 
     @abstractmethod
@@ -14,7 +13,6 @@ class Printer(ABC):
 
 
 class StdoutPrinter(Printer):
-
     """Class that prints a message to console."""
 
     def print(self, message: Message):

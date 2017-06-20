@@ -2,7 +2,6 @@ from abc import ABC, abstractmethod
 
 
 class Message(ABC):
-
     """Base class for all messages."""
 
     @abstractmethod
@@ -17,7 +16,6 @@ class Message(ABC):
 
 
 class StrMessage(Message):
-
     """Class that stores a message in string format."""
 
     def __init__(self, message: str):
@@ -47,7 +45,6 @@ class StrMessage(Message):
 
 
 class HtmlMessage(Message):
-
     """Class that stores a message in html format."""
 
     def __init__(self, base: Message):
@@ -76,7 +73,6 @@ class HtmlMessage(Message):
 
 
 class FakeMessage(Message):
-
     """
     Class that stores a message and has field values by default.
 
