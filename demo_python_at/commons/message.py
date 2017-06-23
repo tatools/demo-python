@@ -21,16 +21,14 @@ class StrMessage(Message):
     """Class that stores a message in string format."""
 
     def __init__(self, message: str):
-        """
-        Initialize StrMessage object.
+        """Initialize StrMessage object.
 
         :param message: data in string format
         """
         self._message = message
 
     def exist(self) -> bool:
-        """
-        Verify that message length is greater than 0.
+        """Verify that message length is greater than 0.
 
         :return: True if message length is greater than 0
                  False in other cases
@@ -38,8 +36,7 @@ class StrMessage(Message):
         return len(self._message) > 0
 
     def data(self) -> str:
-        """
-        Get message data.
+        """Get message data.
 
         :return: message data in string format
         """
@@ -51,24 +48,21 @@ class HtmlMessage(Message):
     """Class that stores a message in html format."""
 
     def __init__(self, base: Message):
-        """
-        Initialize HtmlMessage object.
+        """Initialize HtmlMessage object.
 
         :param base: Message class object
         """
         self._message = base
 
     def data(self):
-        """
-        Reformat message data in HTML paragraph.
+        """Reformat message data in HTML paragraph.
 
         :return: reformatted message data in string format
         """
         return "<p>{m}</p>".format(m=self._message.data())
 
     def exist(self):
-        """
-        Verify if message exists.
+        """Verify if message exists.
 
         :return: existence state of message as bool
         """
@@ -77,15 +71,13 @@ class HtmlMessage(Message):
 
 class FakeMessage(Message):
 
-    """
-    Class that stores a message and has field values by default.
+    """Class that stores a message and has field values by default.
 
     Field values will be set as default if not specified in constructor.
     """
 
     def __init__(self, message: str = "", exist: bool = False):
-        """
-        Initialize FakeMessage object.
+        """Initialize FakeMessage object.
 
         :param message: data in string format or "" by default
         :param exist: whether data exist or False by default
@@ -94,16 +86,14 @@ class FakeMessage(Message):
         self._exist = exist
 
     def exist(self) -> bool:
-        """
-        Get existence state of message.
+        """Get existence state of message.
 
         :return: existence state of message as bool
         """
         return self._exist
 
     def data(self) -> str:
-        """
-        Get message data.
+        """Get message data.
 
         :return: message data in string format
         """
