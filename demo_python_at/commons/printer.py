@@ -18,8 +18,7 @@ class StdoutPrinter(Printer):
     """Class that prints a message to console."""
 
     def print(self, message: Message):
-        """
-        Print given message in stdout.
+        """Print given message in stdout.
 
         :param message: Message class object
         """

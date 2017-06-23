@@ -16,16 +16,14 @@ class Application(ABC):
 
 class SimpleApplication(Application):
 
-    """
-    Class that simply prints out text.
+    """Class that simply prints out text.
 
     It aggregates the Printer and Message class instances and
     performs printing the content of Message instance.
     """
 
     def __init__(self, printer: Printer, message: Message):
-        """
-        Initialize SimpleApplication object.
+        """Initialize SimpleApplication object.
 
         :param printer: Printer class object
         :param message: Message class object
