@@ -1,2 +1,5 @@
 [flake8]
+max-complexity = 5
 max-line-length = 120
+statistics = True
+count = True
